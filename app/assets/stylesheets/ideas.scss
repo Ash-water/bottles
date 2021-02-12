@@ -1,3 +1,97 @@
-// Place all the styles related to the ideas controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+// indexのcss
+header {
+  height: 50px;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  border: 1px solid rgb(155, 39, 155);
+}
+
+.heading{
+  width: 50%;
+  margin-left: 30px;
+}
+
+.navbar{
+  width: 50%;
+  padding: 20px;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.main{
+  color: white;
+}
+
+.top-page{
+  width :100vw;
+  height: 100vh;
+
+  background-image: url("/assets/background1.png") ;
+  background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+  background-position:center center;                     /* 画像の表示位置を指定  */
+  background-size:contain;                               /* 画像のサイズを指定    */
+  width:100%;                                            /* 横幅のサイズを指定    */
+  height:100vh;                                          /* 縦幅のサイズを指定    */
+  
+  position: relative;
+  z-index: 20;
+}
+
+.listing{
+  list-style: none;
+  position: absolute;
+  top: 240px;
+  left: 600px;
+}
+
+
+.menu{
+  font-size: 30px;
+  padding: 5px 10px 10px 5px;
+  margin-bottom: 70px;
+  width: 300px;
+  border: solid 1px rgb(136, 48, 136);
+  text-align: center;
+}
+
+.copyright{
+  color: #ffffff;
+  position: absolute;
+  margin-top: 670px;
+  margin-left: 580px;
+  width: 500px;
+}
+
+.circle{
+  background: linear-gradient(rgb(228, 211, 139), rgb(106, 85, 201));
+  
+  width: 400px;/*幅*/
+	height: 400px;/*高さ*/
+  border-radius: 50%;/*角丸*/
+
+  position: absolute;
+  top: 55px;
+  left: 170px;
+  
+  z-index: 10;
+}
