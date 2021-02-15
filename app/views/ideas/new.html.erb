@@ -1,0 +1,9 @@
+<div class="new-posting2">
+    <img src="images/paper.png" class="paper" alt="paper">
+    <%= form_with model:@idea do |f| class=idea-form %>
+    <%= f.label :name, 'new idea' class="small-field" %>
+    <%= f.text_field :description, "idea description" class="large-field" %>
+    <%= f.submit "Throw into ocan"%>
+    <% end %>
+</div>
+  <img src="images/bottle5.png" class="bottle" alt="bottle">

@@ -95,3 +95,64 @@ header {
   
   z-index: 10;
 }
+
+// from here new
+
+.new-posting{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(79, 48, 165) , rgb(255, 255, 255) 800px); 
+}
+
+.new-posting2{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, rgb(60, 24, 158) , rgb(255, 255, 255) 500px); 
+}
+
+.paper{
+  width: 30%;
+  height: 75%;
+  position: relative;
+}
+
+.idea-form{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.small-field{
+  width: 200px;
+  height: 40px;
+
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
+.large-field{
+  width: 300px;
+  height: 400px;
+
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.bottle{
+  width: 15%;
+  height: 45%;
+
+  position: absolute;
+  top: 400px;
+  left: 500px;
+}
+
+.send{
+  margin-top: 10px;
+  margin-left: 55px;
+}
