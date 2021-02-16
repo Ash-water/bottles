@@ -1,8 +1,22 @@
 <div class="ocean">
-    <div class="bottles">
-      <img src="/assets/float_bottle.png" class="bottle2" alt="bottle">
+<div class="bottles">
+  <% @ideas.each do |idea| %>
+    <div class="idea-image">
+      <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
+        <div class="idea-info">
+        <h3 class="idea-name">
+        <%= idea.name %>
+        </h3>
       </div>
-      <div class="bottles">
-        <img src="/assets/float_bottle.png" class="bottle2" alt="bottle">
-      </div>
+    </div>
+  <% end %>
   </div>
+  </div>
+
+  
+<div class="parent">
+  <div class="child">
+    <div class="next">
+    </div>
+  </div>
+</div>
