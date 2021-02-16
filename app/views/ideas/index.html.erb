@@ -1,8 +1,22 @@
-<div class="top-page">
-        <ul class="listing">
-          <li class="menu">Throw Ideas Into Ocean</li>
-          <li class="menu">See Your Idea's Ocean</li>
-          <li class="menu">See Other's Ocean</li>
-        </ul>
+<div class="ocean">
+<div class="bottles">
+  <% @ideas.each do |idea| %>
+    <div class="idea-image">
+      <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
+        <div class="idea-info">
+        <h3 class="idea-name">
+        <%= idea.name %>
+        </h3>
+      </div>
+    </div>
+  <% end %>
+  </div>
+  </div>
+
+  
+<div class="parent">
+  <div class="child">
+    <div class="next">
+    </div>
+  </div>
 </div>
-    <div class="circle"></div>

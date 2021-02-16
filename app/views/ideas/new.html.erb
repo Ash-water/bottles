@@ -1,0 +1,11 @@
+<div class="new-posting2">
+    <img src="/assets/paper.png" class="paper" alt="paper">
+    <div class="idea-form">
+      <%= form_with(model: @idea, local: true) do |f| %>
+      <%= f.text_field :name, placeholder:'new idea', class:"small-field" %>
+      <%= f.text_field :description, placeholder:"idea description", class:"large-field" %>
+      <%= f.submit "Throw into ocan", class:"send"%>
+      <% end %>
+    </div>
+</div>
+  <img src="/assets/bottle5.png" class="new-bottle" alt="bottle">
