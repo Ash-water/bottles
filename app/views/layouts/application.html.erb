@@ -17,8 +17,8 @@
       <div class="navbar">
         <ul class="nav-list">
           <li>What is Private Idea Beach?</li>
-          <li>Log in</li>
-          <li>Sign up</li>
+          <li><%= link_to "Log In",  new_user_session_path, class:"link" %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path, class:"link" %></li>
         </ul>
       </div>
     </header>
