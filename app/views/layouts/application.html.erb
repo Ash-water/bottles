@@ -17,8 +17,13 @@
       <div class="navbar">
         <ul class="nav-list">
           <li>What is Private Idea Beach?</li>
+          <% if user_signed_in? %>
+          <li><%= current_user.nickname %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"link" %></li>
+          <% else %>
           <li><%= link_to "Log In",  new_user_session_path, class:"link" %></li>
           <li><%= link_to "Sign Up", new_user_registration_path, class:"link" %></li>
+          <% end %>
         </ul>
       </div>
     </header>
