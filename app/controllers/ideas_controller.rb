@@ -1,5 +1,14 @@
 class IdeasController < ApplicationController
 
+  def top
+  end
+
+  def introduction
+  end
+
+  def index2
+  end
+
   def index
     @ideas = Idea.all
   end
@@ -13,9 +22,14 @@ class IdeasController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @idea = Idea.find(params[:id])
+  end
+
   private
 
   def idea_params
     params.require(:idea).permit(:name, :description)
   end
+
 end

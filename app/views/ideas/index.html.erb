@@ -5,7 +5,7 @@
       <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
         <div class="idea-info">
         <h3 class="idea-name">
-        <%= idea.name %>
+        <%= link_to "#{idea.name}", idea_path(idea.id), class:"link", class:"idea-name" %>
         </h3>
       </div>
     </div>

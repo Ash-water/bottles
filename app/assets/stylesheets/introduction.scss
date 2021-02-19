@@ -1,0 +1,34 @@
+.intro-background{
+  height: 120px;
+  width: 100vw;
+  background :linear-gradient(to right, rgb(135, 120, 170) , rgba(72, 47, 129, 0.911) 600px);
+  position: relative;
+}
+
+.intro-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+
+  font-size: 60px;
+  color: white;
+}
+
+.introduction{
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 19px;
+  font-family: "serif";
+}
+
+.intro-bottle{
+  position: absolute;
+  top: 250px;
+  left: 1000px;
+  height: 60%;
+  width: 20%;
+  transform: rotate( 45deg );
+}
