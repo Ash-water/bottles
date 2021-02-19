@@ -7,18 +7,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   </head>
 
   <body>
   <header>
       <div class="heading">
-        <h1 class="title"><%= link_to "Bottles Your Private Idea Beach", root_path, class:"link" %></h1>
+        <p class="title"><%= link_to "Bottles  - Your Private Idea Beach -", root_path, class:"link" %></p>
       </div>
       <div class="navbar">
         <ul class="nav-list">
-          <li>What is Private Idea Beach?</li>
+          <li><%= link_to "What is Private Idea Beach?",  introduction_ideas_path, class:"link" %></li>
           <% if user_signed_in? %>
-          <li><%= current_user.nickname %></li>
+          <li class="nickname"><%= current_user.nickname %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"link" %></li>
           <% else %>
           <li><%= link_to "Log In",  new_user_session_path, class:"link" %></li>
