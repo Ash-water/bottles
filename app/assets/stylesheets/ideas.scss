@@ -135,8 +135,8 @@ header {
 .idea-form{
   
   position: absolute;
-  top: 30px;
-  left: 500px;
+  top: 50px;
+  left: 200px;
   
   width: 420px;
   height: 600px;
@@ -171,7 +171,7 @@ header {
 
   background-color: rgb(240, 239, 243);
   
-  line-height: 1.0em;
+  line-height: 1.5em;
   
   margin-top: 40px;
   margin-left: 55px;
@@ -213,14 +213,19 @@ header {
   list-style: none;
   font-size: 50px;
   padding-top: 160px;
-  padding-left: 1000px;
+  padding-left: 900px;
 }
 
 .new-menu{
-  padding-bottom: 90px;
+  margin-bottom: 90px;
 
-  color: #7853ce;
+  color: #2f2d33;
   
+  border: solid 2px rgb(106, 85, 201);
+
+  margin-right: 200px;
+
+  text-align: center;
 }
 
 //hrom here index
@@ -272,11 +277,6 @@ z-index: 10;
   text-decoration: none;
 }
 
-.description{
-  white-space: pre-wrap;
-  font-family: "serif";
-}
-
 // create page
 
 .create-page{
@@ -325,4 +325,50 @@ z-index: 10;
   text-align: center;
 
   padding: 5px 20px;
+}
+
+// from here, show
+.show-page{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, rgb(42, 12, 126) , rgb(143, 101, 199) 500px); 
+  color: white;
+}
+
+.show-name{
+  font-size: 40px;
+  border: solid 1px white;
+  text-align: center;
+}
+
+.description{
+  margin-top: 15px;
+  white-space: pre-wrap;
+  font-family: "serif";
+}
+
+.show-idea{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+
+  height: 80vh;
+}
+
+.show-menu{
+  height: 80vh;
+
+  position: absolute;
+  top: 170px;
+  left: 1000px;
+}
+
+.show-menu-list{
+  font-size: 60px;
+  list-style: none;
+}
+
+.show-menu-each{
+  margin-bottom: 70px;
 }
