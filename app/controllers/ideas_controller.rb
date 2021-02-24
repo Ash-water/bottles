@@ -18,8 +18,12 @@ class IdeasController < ApplicationController
   end
 
   def create
-    Idea.create(idea_params)
-    redirect_to root_path
+    idea = Idea.new(idea_params)
+    if idea.save
+    # (createページに移行, ノーマルアクション)
+    else
+      render :new
+    end
   end
 
   def show
@@ -29,7 +33,7 @@ class IdeasController < ApplicationController
   private
 
   def idea_params
-    params.require(:idea).permit(:name, :description)
+    params.require(:idea).permit(:name, :description).merge(user_id: current_user.id)
   end
 
 end
