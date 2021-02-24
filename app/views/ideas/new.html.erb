@@ -2,7 +2,7 @@
 
     <div>
       <ul class="new-menu-list">
-        <%# <li class="new-menu">Create Idea</li> %>
+        <li class="new-menu">Create Idea</li>
         <li class="new-menu">To your ocean</li>
         <li class="new-menu">Back to Top</li>
       </ul>
@@ -12,7 +12,7 @@
       <%= form_with(model: @idea, local: true) do |f| %>
       <%= f.text_field :name, placeholder:'new idea', class:"small-field" %>
       <%= f.text_area :description, placeholder:"idea description", class:"large-field" %>
-      <%= f.submit "Throw into ocan", class:"send"%>
+      <%= f.submit "SEND", class:"send"%>
       <% end %>
     </div>
 

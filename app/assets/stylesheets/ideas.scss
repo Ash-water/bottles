@@ -142,6 +142,7 @@ header {
   height: 600px;
   background-color: rgb(240, 239, 243);
   
+
 }
 
 .small-field{
@@ -200,10 +201,10 @@ header {
   display: block;
   border: none;
   margin-top: 10px;
-  margin-left: 115px;
+  margin-left: 170px;
   outline: 0;
 
-  color: #987be7;
+  color: #665596;
   font-size: 20px;
   
 }
@@ -211,7 +212,7 @@ header {
 .new-menu-list{
   list-style: none;
   font-size: 50px;
-  padding-top: 230px;
+  padding-top: 160px;
   padding-left: 1000px;
 }
 
@@ -273,4 +274,53 @@ z-index: 10;
 
 .description{
   white-space: pre-wrap;
+  font-family: "serif";
+}
+
+// create page
+
+.create-page{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, rgb(42, 12, 126) , rgb(255, 255, 255) 700px); 
+}
+
+.complete{
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.bottle3{
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  top: 290px;
+  left: 630px;
+}
+
+.top{
+  position: absolute;
+  top: 120px;
+  left: 70px;
+
+  font-size: 30px;
+
+  border: solid 1px rgb(146, 76, 146);
+
+  padding: 5px 20px;
+}
+
+.index{
+  position: absolute;
+  top: 120px;
+  left: 270px;
+
+  font-size: 30px;
+
+  border: solid 1px rgb(146, 76, 146);
+
+  padding: 5px 20px;
 }
