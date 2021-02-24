@@ -1,0 +1,19 @@
+<div class="new-posting2">
+
+    <div>
+      <ul class="new-menu-list">
+        <li class="new-menu"><del>Create Idea</del></li>
+        <li class="new-menu"><%= link_to "To your ocean", ideas_path, class:"link" %></li>
+        <li class="new-menu"><%= link_to "Back to top", root_path, class:"link" %></li>
+      </ul>
+    </div>
+
+    <div class="idea-form">
+      <%= form_with(model: @idea, local: true) do |f| %>
+      <%= f.text_field :name, placeholder:'new idea', class:"small-field" %>
+      <%= f.text_area :description, placeholder:"idea description", class:"large-field" %>
+      <%= f.submit "SEND", class:"send"%>
+      <% end %>
+    </div>
+
+</div>

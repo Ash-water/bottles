@@ -1,4 +1,5 @@
 class IdeasController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :new, :show, :edit, :delete,] 
 
   def top
   end
@@ -10,7 +11,7 @@ class IdeasController < ApplicationController
   end
 
   def index
-    @ideas = Idea.all
+    @ideas = Idea.includes(:user)
   end
 
   def new
@@ -28,6 +29,22 @@ class IdeasController < ApplicationController
 
   def show
     @idea = Idea.find(params[:id])
+  end
+
+  def edit
+    @idea = Idea.find(params[:id])
+  end
+
+  def update
+    idea = Idea.find(params[:id])
+    idea.update(idea_params)
+    redirect_to idea_path(idea.id)
+  end
+
+  def destroy
+    idea = Idea.find(params[:id])
+    idea.destroy
+    redirect_to ideas_path
   end
 
   private

@@ -6,8 +6,8 @@
 
   <div class="show-menu">
     <ul class="show-menu-list">
-      <li class="show-menu-each">Edit</li>
-      <li class="show-menu-each">Delete</li>
+      <li class="show-menu-each"><%= link_to "Edit", edit_idea_path(@idea.id), class:"link2" %></li>
+      <li class="show-menu-each"><%= link_to "Delete", idea_path(@idea.id), method: :delete, class:"link2" %></li>
       <li class="show-menu-each">To your ocean</li>
     <ul>
 </div>
