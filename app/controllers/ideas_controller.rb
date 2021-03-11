@@ -47,6 +47,18 @@ class IdeasController < ApplicationController
     redirect_to ideas_path
   end
 
+  def share
+    idea = idea.find(params[:id])
+    if idea.share 
+      idea.update(share: false)
+    else
+      idea.share(share: true)
+    end
+
+    item = Post.find(params[:id])
+    render json: { post: item }
+  end
+
   private
 
   def idea_params
