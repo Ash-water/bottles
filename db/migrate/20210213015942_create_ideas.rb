@@ -3,6 +3,7 @@ class CreateIdeas < ActiveRecord::Migration[6.0]
     create_table :ideas do |t|
       t.string :name, null: false
       t.text :description, null: false 
+      t.boolean :share
       t.timestamps
     end
   end

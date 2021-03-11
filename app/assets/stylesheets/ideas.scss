@@ -14,6 +14,9 @@ ul,li {
   margin: 0;
 }
 
+a { text-decoration: none;}
+
+
 // indexのcss
 header {
   height: 50px;
@@ -113,6 +116,19 @@ header {
   left: 170px;
   
   z-index: 10;
+}
+
+.pagenation{
+  font-size: 30px;
+  height: 40px;
+  width: 300px;
+  
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 1100px;
+
+  a:visited { color: #ffffff; }
 }
 
 // from here new
@@ -243,7 +259,7 @@ header {
 
 .bottles{
   position: absolute;
-  top: 30px;
+  top: 15px;
   left: 220px;
   display: flex;
   justify-content: space-around;

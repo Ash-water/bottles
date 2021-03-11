@@ -1,19 +1,21 @@
 <div class="ocean">
-<div class="bottles">
-  <% @ideas.each do |idea| %>
-  <% if idea.user.id == current_user.id %>
-    <div class="idea-image">
-      <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
-        <div class="idea-info">
-        <h3 class="idea-name">
-        <%= link_to "#{idea.name}", idea_path(idea.id), class:"link", class:"idea-name" %>
-        </h3>
-      </div>
-    </div>
-  <% end %>
-  <% end %>
+  <div class="bottles">
+    <% @ideas.each do |idea| %>
+      <% if idea.user.id == current_user.id %>
+        <div class="idea-image">
+          <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
+            <div class="idea-info">
+            <h3 class="idea-name">
+            <%= link_to "#{idea.name}", idea_path(idea.id), class:"link", class:"idea-name" %>
+            </h3>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
   </div>
+  <div class="pagenation"><%= paginate @ideas %>
   </div>
+</div>
 
   
 <div class="parent">

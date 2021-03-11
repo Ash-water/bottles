@@ -11,7 +11,7 @@ class IdeasController < ApplicationController
   end
 
   def index
-    @ideas = Idea.includes(:user)
+    @ideas = Idea.includes(:user).order(id: "DESC").page(params[:page]).per(6)
   end
 
   def new
