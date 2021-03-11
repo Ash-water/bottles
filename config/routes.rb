@@ -8,7 +8,8 @@ Rails.application.routes.draw do
     get 'top'
     get 'introduction'
     get 'index2'
-    get 'share'
     end
   end
+
+  get 'share_ideas/:id', to: 'ideas#share'
 end

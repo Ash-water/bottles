@@ -8,6 +8,8 @@ class IdeasController < ApplicationController
   end
 
   def index2
+    @ideas = Idea.includes(:user).order(id: "DESC").page(params[:page]).per(6)
+
   end
 
   def index
@@ -48,15 +50,14 @@ class IdeasController < ApplicationController
   end
 
   def share
-    idea = idea.find(params[:id])
+    idea = Idea.find(params[:id])
     if idea.share 
       idea.update(share: false)
+      redirect_to ideas_path
     else
-      idea.share(share: true)
+      idea.update(share: true)
+      redirect_to ideas_path
     end
-
-    item = Post.find(params[:id])
-    render json: { post: item }
   end
 
   private
