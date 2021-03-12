@@ -8,6 +8,7 @@
     <ul class="show-menu-list">
       <li class="show-menu-each"><%= link_to "Edit", edit_idea_path(@idea.id), class:"link2" %></li>
       <li class="show-menu-each"><%= link_to "Delete", idea_path(@idea.id), method: :delete, class:"link2" %></li>
+      <li class="show-menu-each"><%= link_to "Share", "/share_ideas/#{@idea.id}", class:"link2" %></li>
       <li class="show-menu-each">To your ocean</li>
     <ul>
 </div>

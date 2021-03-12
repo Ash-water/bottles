@@ -10,4 +10,6 @@ Rails.application.routes.draw do
     get 'index2'
     end
   end
+
+  get 'share_ideas/:id', to: 'ideas#share'
 end

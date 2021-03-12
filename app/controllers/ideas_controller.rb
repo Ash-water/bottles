@@ -8,6 +8,8 @@ class IdeasController < ApplicationController
   end
 
   def index2
+    @ideas = Idea.includes(:user).order(id: "DESC").page(params[:page]).per(6)
+
   end
 
   def index
@@ -45,6 +47,17 @@ class IdeasController < ApplicationController
     idea = Idea.find(params[:id])
     idea.destroy
     redirect_to ideas_path
+  end
+
+  def share
+    idea = Idea.find(params[:id])
+    if idea.share 
+      idea.update(share: false)
+      redirect_to ideas_path
+    else
+      idea.update(share: true)
+      redirect_to ideas_path
+    end
   end
 
   private
