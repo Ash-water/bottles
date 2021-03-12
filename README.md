@@ -70,6 +70,7 @@ has_many :ideas
 |-------------------|-----------|--------------------------|
 |name               |string     |null: false               |
 |description        |string     |null: false               |
+|share              |boolean    |                          |
 
 ### Association
 belongs_to :user
