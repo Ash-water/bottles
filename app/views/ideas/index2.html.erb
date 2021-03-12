@@ -1,7 +1,7 @@
 <div class="ocean">
   <div class="bottles">
     <% @ideas.each do |idea| %>
-      <% if idea.share %>
+      <% if idea.share && idea.user_id != current_user.id %>
         <div class="idea-image">
           <img src="/assets/float_bottle.png" class="bottle" alt="bottle">
             <div class="idea-info">
