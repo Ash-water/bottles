@@ -17,6 +17,7 @@ ul,li {
 a { text-decoration: none;}
 
 
+
 // indexのcss
 header {
   height: 50px;
@@ -128,126 +129,10 @@ header {
   top: 10px;
   left: 1100px;
 
+  a:link {color: #ffff;}
   a:visited { color: #ffffff; }
 }
 
-// from here new
-
-.new-posting2{
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(to right, rgb(79, 48, 165) , rgb(255, 255, 255) 800px); 
-}
-
-.new-posting1{
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(to top, rgb(42, 12, 126) , rgb(255, 255, 255) 500px); 
-}
-
-.paper{
-  width: 30%;
-  height: 75%;
-  position: relative;
-}
-
-.idea-form{
-  
-  position: absolute;
-  top: 50px;
-  left: 200px;
-  
-  width: 420px;
-  height: 600px;
-  background-color: rgb(240, 239, 243);
-  
-
-}
-
-.small-field{
-  width: 300px;
-  height: 40px;
-  background-color: rgb(240, 239, 243);
-
-  margin-top: 40px;
-  margin-left: 55px;
-
-  display:block;
-
-
-  border-bottom:1px solid #5433a1;
-  border-right:none;
-  border-left:none;
-  border-top:none;
-
-  outline: 0;
-}
-
-.large-field{
-  width: 300px;
-  padding-bottom: 350px;
-  
-
-  background-color: rgb(240, 239, 243);
-  
-  line-height: 1.5em;
-  
-  margin-top: 40px;
-  margin-left: 55px;
-
-  display:block;
-
-
-  border-bottom:1px solid #5433a1;
-  border-right:none;
-  border-left:none;
-  border-top:none;
-
-  outline: 0;
-
-}
-
-.new-bottle{
-  width: 15%;
-  height: 45%;
-
-  position: absolute;
-  top: 400px;
-  left: 500px;
-}
-
-.send{
-  display: block;
-  border: none;
-  margin-top: 10px;
-  margin-left: 170px;
-  outline: 0;
-
-  color: #665596;
-  font-size: 20px;
-  
-}
-
-.new-menu-list{
-  list-style: none;
-  font-size: 50px;
-  padding-top: 160px;
-  padding-left: 900px;
-}
-
-.new-menu{
-  margin-bottom: 90px;
-
-  color: #2f2d33;
-  
-  border: solid 2px rgb(106, 85, 201);
-
-  margin-right: 200px;
-
-  text-align: center;
-}
 
 //hrom here index
 .ocean{
@@ -298,55 +183,7 @@ z-index: 10;
   text-decoration: none;
 }
 
-// create page
 
-.create-page{
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(to top, rgb(42, 12, 126) , rgb(255, 255, 255) 700px); 
-}
-
-.complete{
-  font-size: 40px;
-  position: absolute;
-  top: 30px;
-  left: 50px;
-}
-
-.bottle3{
-  height: 25%;
-  width: 10%;
-  position: absolute;
-  top: 290px;
-  left: 630px;
-}
-
-.top{
-  position: absolute;
-  top: 120px;
-  left: 70px;
-
-  font-size: 30px;
-
-  border: solid 2px rgba(138, 56, 170, 0.719);
-  text-align: center;
-
-  padding: 5px 20px;
-}
-
-.index{
-  position: absolute;
-  top: 120px;
-  left: 270px;
-
-  font-size: 30px;
-
-  border: solid 2px rgba(138, 56, 170, 0.719);
-  text-align: center;
-
-  padding: 5px 20px;
-}
 
 // from here, show
 .show-page{
@@ -382,7 +219,7 @@ z-index: 10;
   height: 80vh;
 
   position: absolute;
-  top: 170px;
+  top: 140px;
   left: 1000px;
 }
 

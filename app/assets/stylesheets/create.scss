@@ -1,0 +1,54 @@
+// create page
+
+.create-page{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, rgb(42, 12, 126) , rgb(162, 145, 223) 700px); 
+}
+
+.complete{
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: white;
+}
+
+.bottle3{
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  top: 290px;
+  left: 630px;
+}
+
+.top{
+  position: absolute;
+  top: 120px;
+  left: 70px;
+
+  font-size: 30px;
+
+  
+  text-align: center;
+
+  padding: 5px 20px;
+
+  color: white;
+}
+
+.index{
+  position: absolute;
+  top: 120px;
+  left: 270px;
+
+  font-size: 30px;
+
+  
+  text-align: center;
+
+  padding: 5px 20px;
+
+  color: white;
+}
