@@ -7,6 +7,7 @@
             <div class="idea-info">
             <h3 class="idea-name">
             <%= link_to "#{idea.name}", idea_path(idea.id), class:"link", class:"idea-name" %>
+            <%= idea.user.name, class:"link", class:"idea-name" %>
             </h3>
           </div>
         </div>
