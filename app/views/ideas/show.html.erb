@@ -8,15 +8,13 @@
     <ul class="show-menu-list">
       <li class="show-menu-each"><%= link_to "Edit", edit_idea_path(@idea.id), class:"link2" %></li>
       <li class="show-menu-each"><%= link_to "Delete", idea_path(@idea.id), method: :delete, class:"link2" %></li>
-      <li class="show-menu-each"><%= link_to "Share", "/share_ideas/#{@idea.id}", class:"link2" %></li>
+      <li class="show-menu-each"><a  href="", class="link2">Share</li>
       <li class="show-menu-each"><%= link_to "To your ocean", ideas_path, class:"link2" %></li>
     <ul>
 
-  <%# <div class="confirm-share">
-    <h1>このアイディアをシェアします。よろしいですか？</h1>
-    <div class="yes-botton">YES
-    </div>
-    <div class="no-botton">no
-    </div>
-  </div> %>
+  <div class="modal" id="modal-open">
+    <h6>このアイディアをシェアします。よろしいですか？</h6>
+    <div class="choice"><%= link_to "Yes", "/share_ideas/#{@idea.id}", class:"yes-botton", id:"yes" %><a href="" class="no-botton", id="no">No</a></div>
+  <div>
+
 </div>
