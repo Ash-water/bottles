@@ -232,20 +232,65 @@ z-index: 10;
   margin-bottom: 70px;
 }
 
+.share-botton{
+  cursor: pointer;
+}
+
 .modal{
 height: 50vh;
 width: 70vw;
 
   position: fixed;
   top: 250px;
-  left: 300px;
+  left: 270px;
 
+background-color: rgba(168, 162, 162, 0.712);
+
+text-align: center;
+
+opacity: 0;
+visibility: hidden;
+transition: 0.3s;
+}
+
+.modal.active{
+  opacity: 1;
+  visibility: visible;
 }
 
 .choice{
-  padding-left: 300px;
+
+  padding-top: 50px;
+  
+  
 }
 
 .yes-botton{
-  padding-right: 40px;
+  font-size: 100px;
+  padding-right: 80px;
+}
+
+.no-botton{
+  font-size: 100px;
+  color: #551A8B;
+  cursor: pointer;
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.mask.active{
+  opacity: 0.7;
+  visibility: visible;
 }
