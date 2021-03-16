@@ -2,7 +2,8 @@
 
 ## アプリ名 
 ### 「Bottles / Your Private Idea Beach」
-![Uploading 01efd55dfc3cf3cd34cb40fcb30d1a4a.jpg…]()
+![01efd55dfc3cf3cd34cb40fcb30d1a4a](https://user-images.githubusercontent.com/76500422/111257929-5a4ddf00-865f-11eb-9314-d1dc1a84e6b8.jpg)
+
 
 ## アプリ内容
 ### 何かアイディアを思いついた時にメモ帳のように管理しておくアプリケーションです。
